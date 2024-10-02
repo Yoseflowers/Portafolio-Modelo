@@ -1,0 +1,1100 @@
+
+:root {
+
+    --color-de-link: #000000;
+    --color-de-texto: #ccc;
+    --color-de-hover: #ffdd57;
+    --color-de-fondo: #2C1D3A;
+    --color-de-borde: #f5367e;
+    --color-de-presentacion: #ffffff;
+    --color-de-subtitulos: #ffba08;
+    --color-de-habilidades: #FDD835;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Evita que haya desplazamiento horizontal no deseado */
+
+    /* Agregamos la imagen de fondo */
+    background-image: url('assets/digital-art-galaxy.jpg');
+    background-size: cover;
+    /* Para que la imagen cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-texto);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    
+    padding: 1rem;
+
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
+    width: 2rem;
+    /* Ajustar el tamaño de la imagen */
+    height: 2rem;
+    /* Ajustar el tamaño de la imagen */
+    margin-right: 1rem;
+    /* Espacio entre la imagen y el texto */
+    display: inline-block;
+    /* Asegura que la imagen esté alineada con el texto */
+    vertical-align: middle;
+    /* Centrar la imagen verticalmente con respecto al texto */
+}
+
+
+
+.navegacion a:hover {
+    color: var(--color-de-hover);
+}
+
+/*Cambia el color del texto cuando haces hover*/
+
+.navegacion {
+    background-color: var(--color-de-fondo);
+    border: 2px solid var(--color-de-borde);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 4rem;
+    padding: 0 1rem;
+    z-index: 1000;
+    border-radius: 0 0 3rem 3rem;
+
+}
+
+.navegacion a {
+    margin: 0 0.8rem;
+    /* Ajusta el espacio entre los enlaces */
+    padding: 0;
+    /* Remueve cualquier padding adicional de los enlaces */
+    text-decoration: none;
+    /* Evita que aparezca subrayado */
+    color: var(--color-de-presentacion);
+    /* Color del texto */
+
+}
+
+
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    transition: color 0.2s ease-out;
+}
+
+
+/* Menú de hamburguesa */
+.hamburger {
+    display: flex;
+    /* Utilizamos flexbox para centrar el contenido */
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #1d0722;
+    border-radius: 50%;
+    /* Hace que el contenedor sea circular */
+    justify-content: center;
+    /* Centra el icono horizontalmente */
+    align-items: center;
+    /* Centra el icono verticalmente */
+    cursor: pointer;
+    z-index: 101;
+
+}
+
+.hamburger span {
+    font-size: 2rem;
+    /* Tamaño del icono */
+    color: #0a0909;
+    /* Puedes ajustar el color del icono */
+    user-select: none;
+
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    color: var(--color-de-presentacion);
+    gap: 20rem;
+}
+
+/* Estilos para la imagen */
+.presentacion__foto {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 60%;
+    box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenedor de la presentación */
+.presentacion__contenedor {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 600px;
+
+}
+
+/* Estilos para el texto */
+.presentacion__titulo {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-de-hover);
+}
+
+.presentacion__subtitulo {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-de-presentacion);
+}
+
+.subtitulo {
+    margin-top: 0.5rem;
+    /* Puedes ajustar según lo necesites */
+    margin-bottom: 0.5rem;
+    color: var(--color-de-borde);
+    background: linear-gradient(90deg, #f5367e, #ffba08);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitulo2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--color-de-subtitulos);
+}
+
+/* Botones estilo */
+.bottom {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.css-1nygcva,
+.css-modd10 {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.css-1nygcva {
+    background: linear-gradient(90deg, #f5367e, #ffdd57);
+    color: var(--color-de-presentacion);
+}
+
+.css-modd10 {
+    background-color: var(--color-de-fondo);
+    color: var(--color-de-presentacion);
+    border: 2px solid var(--color-de-borde);
+}
+
+.css-1nygcva:hover,
+.css-modd10:hover {
+    transform: scale(1.05);
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    gap: 1rem;
+    margin-left: -7%;
+
+}
+
+.redes__img {
+    list-style: none;
+}
+
+.redes__img a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-de-presentacion);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.iconos__imagen {
+    height: 20px;
+    /* Tamaño fijo para que se vea como icono */
+    width: 20px;
+    /* Ajusta el tamaño del icono */
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi__titulo {
+    text-align: center;
+    font-size: 3em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(60deg, #fdfd5c, #ffd000);
+}
+
+.sobre-mi__texto {
+    font-size: 1.5rem;
+    color: var(--color-de-presentacion);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 2rem;
+    background-color: var(--color-de-fondo);
+    border: 2px solid var(--color-de-borde);
+
+
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.habilidades__icono {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    opacity: 0.8;
+    /* Aumenta ligeramente la opacidad */
+    padding: 0.6rem;
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.2), rgba(97, 46, 46, 0.1));
+    /* Aumenta el contraste del fondo */
+    border: 1px solid rgba(97, 46, 46, 0.2);
+    /* Hace el borde más visible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.8rem 0.4rem rgba(0, 0, 0, 0.2);
+    /* Sombra más oscura y más pronunciada */
+}
+
+.habilidades__nombre {
+    color: var(--color-de-link);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.habilidades__nombre:hover {
+    color: var(--color-de-habilidades);
+    /* Amarillo brillante */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* Le da un brillo sutil */
+}
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.aficiones__icono {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    opacity: 0.8;
+    /* Aumenta ligeramente la opacidad */
+    padding: 0.6rem;
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.2), rgba(97, 46, 46, 0.1));
+    /* Aumenta el contraste del fondo */
+    border: 1px solid rgba(97, 46, 46, 0.2);
+    /* Hace el borde más visible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.8rem 0.4rem rgba(0, 0, 0, 0.2);
+
+}
+
+.aficiones__nombre {
+    color: var(--color-de-link);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.aficiones__nombre:hover {
+    color: var(--color-de-habilidades);
+    /* Amarillo brillante */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* Le da un brillo sutil */
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.sobre-mi__titulo3 {
+    text-align: center;
+    font-size: 3em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(60deg, #fdfd5c, #ffd000);
+}
+
+
+.contacto__formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.contacto__campo {
+
+    width: 30%;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 1em;
+    color: var(--color-de-presentacion);
+
+}
+
+.contacto__campo--textarea {
+
+    height: 10rem;
+    width: 40%;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    resize: none;
+    color: var(--color-de-presentacion);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+
+}
+
+.contacto__boton {
+
+    font-size: 1em;
+    outline: none;
+    background: linear-gradient(90deg, #f5367e, #ffdd57);
+    color: var(--color-de-presentacion);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+
+/*Pantallas Moviles*/
+@media (max-width: 480px) {
+
+    
+
+    /* Imagen de presentación */
+    .presentacion {
+        flex-direction: column;
+        justify-content: center;
+
+        /*padding: 1rem;*/
+        gap: 1rem;
+    }
+
+    .presentacion__foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contenedor de presentación */
+    .presentacion__contenedor {
+        max-width: 100%;
+        /* Asegura que no se salga del contenedor */
+        text-align: center;
+
+    }
+
+    /* Botones */
+    .bottom {
+        flex-direction: column;
+        /* Cambia los botones a una disposición vertical */
+        gap: 1rem;
+    }
+
+    .css-1nygcva,
+    .css-modd10 {
+        /*width: 100%;*/
+        /* Asegura que los botones ocupen el 100% del ancho */
+        text-align: center;
+    }
+
+    /* Redes sociales */
+    .redes {
+
+
+        display: inline-block;
+
+    }
+
+    .redes__img {
+        margin: 0;
+
+
+    }
+
+
+    .iconos__imagen {
+        width: 30px;
+        /* Aumenta el tamaño del icono para móviles */
+        height: 30px;
+    }
+
+    /* Ajuste del texto de presentación */
+    .presentacion__titulo {
+        font-size: 1.8rem;
+        /* Reduce el tamaño del texto */
+    }
+
+    .presentacion__subtitulo {
+        font-size: 2rem;
+        /* Ajuste para pantallas más pequeñas */
+    }
+
+    .subtitulo2 {
+        font-size: 1.5rem;
+        /* Ajuste para subtítulo */
+    }
+
+    /* Ajustes de la navegación */
+
+    .close-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* Ocultar el menú por defecto */
+    .navegacion {
+        position: absolute;
+        transform: scale(0);
+        top: 0;
+        left: 0px;
+        /* Esconde el menú fuera de la pantalla, hacia la izquierda */
+        width: 300px;
+        height: 100vh;
+        /* Altura del menú a pantalla completa */
+        transition: left 0.5s ease;
+        /* Animación suave al mostrar el menú */
+    }
+
+    .navegacion.active {
+        position: fixed;
+        transition: transform 2s linear;
+        transform: translateX(0%);
+        transform-origin: left;
+        transition: left 2.5s, ease .75s;
+        /* Muestra el menú deslizándolo a su posición */
+    }
+
+    .navegacion.inactive {
+        transition: transform 2s linear;
+        transform: translateX(-100%);
+        transform-origin: left;
+        transition: left 2.5s, ease .75s;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.2rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navegacion__elemento {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+
+
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        /* Ocupa toda la altura de la pantalla */
+
+    }
+
+    .sobre-mi__texto3 {
+        font-size: 2em;
+        /* Texto más pequeño para pantallas móviles */
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+        background-image: linear-gradient(60deg, #ff00ea, #ffd000);
+    }
+
+
+    .aficiones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        /* Ocupa toda la altura de la pantalla */
+    }
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección a columna */
+        align-items: center;
+        /* Centra horizontalmente */
+        /*width: 130%;*/
+        /* Asegura que el contenedor de habilidades ocupe todo el ancho */
+        height: 100%;
+        /* Ocupa toda la altura de la pantalla */
+    }
+
+    .aficiones {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección a columna */
+        align-items: center;
+        /* Centra horizontalmente */
+        height: 100%;
+        /* Ocupa toda la aficiones de la pantalla */
+
+
+    }
+
+}
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ocupa toda la altura de la pantalla */
+    padding: 1rem;
+    box-sizing: border-box;
+    /* Incluye padding en el cálculo del ancho */
+    gap: 1rem;
+    /* Espacio entre los elementos */
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Ocupa el 100% del ancho disponible */
+    max-width: 420px;
+    /* Limita el ancho máximo para el formulario */
+    padding: 1rem;
+    gap: 1rem;
+    /* Espacio entre los campos */
+}
+
+.contacto__campo,
+.contacto__campo--textarea {
+    width: 100%;
+    /* Ancho completo */
+    max-width: 320px;
+    /* Limita el ancho máximo */
+    padding: 0.5rem;
+    margin: 0;
+    /* Elimina cualquier margen que pueda haber */
+    box-sizing: border-box;
+}
+
+.contacto__boton {
+    width: 100%;
+    /* Asegura que el botón ocupe todo el ancho */
+    max-width: 320px;
+    /* Limita el ancho máximo */
+    padding: 0.75rem;
+    text-align: center;
+    background-image: linear-gradient(60deg, #ff00ea, #ffd000);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/**/
+
+@media (min-width: 60rem) {
+    .contacto {
+        max-width: 100%;
+        /* Ajusta el ancho para pantallas grandes */
+        flex-direction: row;
+        /* Elementos en fila */
+        justify-content: space-between;
+        /* Espaciar los elementos */
+        padding: 2rem;
+        gap: 2rem;
+        /* Ajusta el espacio entre los elementos */
+    }
+
+    .sobre-mi__texto3 {
+        font-size: 4em;
+        /* Texto más grande para pantallas grandes */
+    }
+
+
+}
+
+
+
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion {
+        position: fixed;
+        background-color: var(--color-de-fondo);
+        border: 2px solid var(--color-de-borde);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* Alinea los ítems verticalmente en el centro */
+        width: max-content;
+        height: 4rem;
+        padding: 0 1rem;
+        z-index: 1000;
+        border-radius: 0 0 3rem 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0%;
+    }
+
+
+
+
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+
+    .presentacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        max-width: 1024px;
+    }
+
+    .presentacion {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 5rem;
+        border-radius: 2rem;
+        color: var(--color-de-presentacion);
+        gap: 7rem;
+    }
+
+    .presentacion__foto {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
+
+    }
+
+    .presentacion__titulo {
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        color: var(--color-de-hover)
+    }
+
+    .presentacion__subtitulo {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--color-de-presentacion);
+    }
+
+    .subtitulo2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        color: var(--color-de-subtitulos);
+    }
+
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .css-1nygcva,
+    .css-modd10 {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        font-size: 0.5rem;
+        font-weight: bold;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        max-width: 1024px;
+    }
+
+    .sobre-mi__texto {
+
+        flex-direction: column;
+        max-width: 1024px;
+        color: var(--color-de-presentacion);
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+        padding: 0.6rem;
+        margin: 2rem;
+        background-color: var(--color-de-fondo);
+        border: 2px solid var(--color-de-borde);
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        gap: 1rem;
+
+    }
+}
+
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .cabecera {
+        flex-direction: row;
+        /* Alinear el logo y el menú en una fila */
+        justify-content: flex-start;
+        /* Alinear los elementos a la izquierda */
+        padding: 1rem 2rem;
+        /* Ajustar el padding para pantallas grandes */
+    }
+
+    .cabecera__logo {
+        max-width: 120px;
+        /* Aumentar el tamaño del logo */
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2rem;
+        /* Aumentar el espacio entre el logo y otros elementos */
+    }
+
+    .navegacion {
+        background-color: var(--color-de-fondo);
+        border: 2px solid var(--color-de-borde);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        height: 4rem;
+        padding: 0 1rem;
+        z-index: 1000;
+        border-radius: 0 0 3rem 3rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .hamburger {
+        display: none;
+        /* Aseguramos que el menú no se muestre en pantallas grandes */
+    }
+
+    /*Estilos de navegación en pantallas grandes */
+
+    .navegacion {
+        position: fixed;
+        background-color: #3d1f44;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* Cambia a space-around para mayor separación */
+        width: 35%;
+        /* Aumenta el ancho si es necesario */
+        height: 3rem;
+        padding: 0 1rem;
+        /* Ajusta el padding si es necesario */
+        z-index: 1000;
+        border-radius: 0 0 3rem 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        /* Alinea verticalmente los elementos */
+        top: 0%;
+    }
+
+    /* Estilos de los elementos de la lista de navegación */
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        /* Aseguramos que los elementos estén alineados en fila */
+        gap: 1rem;
+        /* Aumenta el espacio entre los elementos si es necesario */
+    }
+
+    /* Estilos para los enlaces de navegación */
+    .navegacion__elemento a {
+
+        font-size: 1.1rem;
+        /* Tamaño de fuente para pantallas grandes */
+        color: #ffffff;
+        /* Ajusta el color del texto */
+        text-decoration: none;
+        /* Elimina el subrayado de los enlaces */
+        font-weight: bold;
+        /* Hace que los enlaces sean más visibles */
+        padding: 0.3rem 0.5rem;
+        /* Reduce el espacio alrededor del texto */
+        transition: color 0.3s ease;
+        /* Efecto de transición al cambiar el color */
+    }
+
+    /* Hover effect para los enlaces */
+    .navegacion__elemento a:hover {
+        color: #ffc107;
+        /* Cambia el color al pasar el cursor */
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        /* Coloca los elementos en columna */
+        justify-content: center;
+        /* Centra verticalmente */
+        align-items: center;
+        /* Centra horizontalmente */
+        padding: 2rem;
+        gap: 2rem;
+        /* Ajusta el espacio entre los elementos */
+
+    }
+
+
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        /* Ocupa el 100% del ancho disponible */
+        max-width: 1200px;
+        /* Limita el ancho máximo para el formulario */
+        padding: 1rem;
+        gap: 1rem;
+        /* Espacio entre los campos */
+    }
+
+    .contacto__campo,
+    .contacto__campo--textarea {
+        width: 100%;
+        /* Ancho completo */
+        max-width: 1200px;
+        /* Limita el ancho máximo */
+        padding: 0.5rem;
+        margin: 0;
+        /* Elimina cualquier margen que pueda haber */
+        box-sizing: border-box;
+    }
+
+    .contacto__boton {
+        width: 50%;
+        /* Asegura que el botón ocupe todo el ancho */
+        max-width: 1200px;
+        /* Limita el ancho máximo */
+        padding: 0.75rem;
+        text-align: center;
+        background-image: linear-gradient(60deg, #ff00ea, #ffd000);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Asegúrate de que el título también se vea bien centrado */
+    .sobre-mi__texto3 {
+        font-size: 4em;
+        /* Texto más grande para pantallas grandes */
+        text-align: center;
+        /* Centra el texto dentro de su contenedor */
+    }
+
+
+
+    /* Botones */
+    .bottom {
+
+        flex-direction: row;
+        /* Cambia la disposición a horizontal en pantallas grandes */
+        gap: 1rem;
+        /* Aumenta el espacio entre los botones en pantallas grandes */
+    }
+
+
+}

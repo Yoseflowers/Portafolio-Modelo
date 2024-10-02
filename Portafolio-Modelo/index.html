@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <img class="cabecera__logo"
+            src="assets/DALL·E 2024-09-26 23.06.18 - A stylized colorful planet with rings, designed in a similar way to vector art. The planet should have smooth, vibrant rings with gradient colors from.webp"
+            alt="Logo">
+
+        <!-- Icono de menú hamburguesa -->
+        <header>
+            <!-- Botón del menú hamburguesa -->
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <!-- Menú de navegación -->
+            <nav class="navegacion">
+                <ul class="navegacion__lista">
+                    <li class="navegacion__elemento"><a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a></li>
+                    <li class="navegacion__elemento"><a href="#habilidades" onclick="toggleMenu()">Habilidades</a></li>
+                    <li class="navegacion__elemento"><a href="#aficiones" onclick="toggleMenu()">Aficiones</a></li>
+                    <li class="navegacion__elemento"><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+                </ul>
+                <!-- Botón de cierre -->
+                <button class="close-menu" onclick="toggleMenu()">✕</button>
+            </nav>
+        </header>
+    </header>
+
+
+
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="assets/yo..jpg" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <p class="presentacion__titulo">Hola 👋</p>
+            <h1 class="presentacion__subtitulo">Soy <span class="subtitulo">Yoselin Flores</span></h1>
+            <h2><span class="subtitulo2">Desarrolladora Front End</span> 💻</h2>
+            <p>Transformo ideas en sitios web atractivos y funcionales</p>
+            <div class="bottom">
+                <a href="#contacto" class="css-1nygcva">🚀 Contacto</a>
+                <a href="#projects" class="css-modd10">📂 Proyectos</a>
+            </div>
+
+            <ul class="redes">
+                <li class="redes__img">
+                    <a href="https://www.linkedin.com/in/yoselin-flowers-" target="_blank">
+                        LinkedIn
+                        <img class="iconos__imagen" src="assets/logotipo-de-linkedin.png" alt="Flecha hacia LinkedIn">
+                    </a>
+                </li>
+                <li class="redes__img">
+                    <a href="https://github.com/Yoseflowers" target="_blank">
+                        Github
+                        <img class="iconos__imagen" src="assets/github.png" alt="Flecha hacia Github">
+                    </a>
+                </li>
+                <li class="redes__img">
+                    <a href="https://https://www.instagram.com/yoseflowers/?hl=es-la" target="_blank">
+                        Instagram
+                        <img class="iconos__imagen" src="assets/instagram.png" alt="Flecha hacia Instagram">
+                    </a>
+                </li>
+                <li class="redes__img">
+                    <a href="ruta/al/cv.pdf" target="_blank">
+                        Currículum
+                        <img class="iconos__imagen" src="assets/curriculum-vitae.png" alt="Flecha hacia Currículum">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h3 class="sobre-mi__titulo">Sobre mí</h3>
+        <p class="sobre-mi__texto">Soy desarrolladora web con experiencia en programación en IA, enfocada en el
+            desarrollo frontend y aplicaciones móviles . Mi formación diversa en derecho y enseñanza musical me ha
+            dotado de habilidades analíticas, comunicación efectiva y trabajo en equipo. Busco una oportunidad para
+            seguir aprendiendo y contribuir al desarrollo de proyectos en un entorno dinámico y desafiante.</p>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h3 class="sobre-mi__titulo3">Habilidades</h3>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/html-5.png" alt="HTML">
+                <p class="habilidades__nombre">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/java script.png" alt="JavaScript">
+                <p class="habilidades__nombre">JavaScript</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/archivo-js.png" alt="Node.js">
+                <p class="habilidades__nombre">Node.js</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/react.png" alt="React">
+                <p class="habilidades__nombre">React</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/ccs.png" alt="CSS">
+                <p class="habilidades__nombre">CSS</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h3 class="sobre-mi__titulo3">Aficiones</h3>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/icons8-violín-48.png" alt="Violin">
+                <p class="aficiones__nombre">Tocar Violín</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/icons8-escuchar-musica-en-auriculares-48.png"
+                    alt="Oír Música">
+                <p class="aficiones__nombre">Oír Música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/icons8-libros-48.png" alt="Leer">
+                <p class="aficiones__nombre">Leer</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h3 class="sobre-mi__titulo3">Contacto</h3>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <textarea class="contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
